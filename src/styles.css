@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  --gry-100: #323232;
+  --button-primary-color: #354156;
+  --grey-50: #6e6e6e;
+  --border-white: #f0f0f0;
+  --white: #ffffff;
+  --stroke: #e7e7e7;
+  --green-highlight-color: #4fa765;
+  --grey-25: #6d798e;
+  --font-family: "Rethink Sans", sans-serif;
+  --border-grey: #d1d1d6;
+  --yellow-text: #fecb00;
+
+  --orange-gradient-bright: #ff9500;
+  --orange-gradient-light: #ffe1b6;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Rethink Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/* common styles */
+#kickstart-project-btn {
+  background-color: var(--button-primary-color);
+  color: var(--white);
+  font-weight: 400;
+  padding: 1rem 1.5rem;
+  border-radius: 8rem;
+}

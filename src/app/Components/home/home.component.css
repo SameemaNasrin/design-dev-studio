@@ -1,0 +1,220 @@
+.design-dev-studio-tag {
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#star {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 94vh;
+  justify-content: space-evenly;
+}
+
+.heading {
+  color: var(--button-primary-color);
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 20vw;
+  line-height: 5rem;
+  margin-bottom: 3rem;
+}
+
+.highlight-text {
+  color: var(--green-highlight-color);
+}
+
+.sub-heading {
+  padding: 0 25vw;
+  text-align: center;
+  color: var(--grey-25);
+  font-size: 1.2rem;
+}
+.project-section {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+app-project-templates {
+  margin: 1rem;
+}
+.marquee-content {
+  display: flex;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-40%);
+  }
+}
+
+.template-section {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-content-template {
+  display: flex;
+  animation: marquee-template 10s linear infinite;
+}
+
+@keyframes marquee-template {
+  from {
+    transform: translateX(-40%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.frames-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem 10rem;
+}
+
+.mission-frames {
+  border: 1px solid var(--border-white);
+  border-radius: 8px;
+  margin: 2rem;
+}
+
+.frame-image {
+  max-width: 30vw;
+}
+
+.frame-text {
+  padding: 1rem;
+  color: var(--button-primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.coming-soon-frame {
+  grid-column: 1 / span 2;
+  margin: 2rem;
+  border: 1px solid var(--border-white);
+  border-radius: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.coming-soon-frame > p:first-child {
+  color: var(--yellow-text);
+  margin-bottom: 7rem;
+}
+
+.coming-soon-other-content p:first-child {
+  color: var(--white);
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+.coming-soon-other-content p:nth-child(2) {
+  color: var(--stroke);
+  padding-bottom: 0.8rem;
+  width: 30vw;
+}
+
+.kickstart-project-btn {
+  background-color: var(--button-primary-color);
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.mission-section,
+.competitive-section,
+.service-section,
+.pricing-section,
+.dark-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-section, .dark-section {
+  margin: 5rem 0;
+  padding-bottom: 5rem;
+  background-image: url("../../../assets/Web_Background_Light_ForServices.svg"),
+    url("../../../assets/Web_Template_Background.svg");
+}
+
+.competitive-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 4vh 10vw;
+  margin-bottom: 5rem;
+}
+
+.competitive-card {
+  padding: 1rem;
+}
+
+.button-sections {
+  width: 40vw;
+  
+  text-align: center;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+
+.service-btn {
+  word-break: keep-all;
+  color: var(--white);
+  font-weight: 200;
+  background-color: transparent;
+  margin: 0.8vh;
+  padding: 1.5vh 1.5vw;
+  /* border property */
+  border: 1px solid transparent;
+  border-image-slice: 1;
+  border-radius: 8px;
+}
+
+.pricing-card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-section-buttons {
+  margin-top: 3rem;
+}
+
+.dark-section-button {
+  margin: 0.5rem;
+}

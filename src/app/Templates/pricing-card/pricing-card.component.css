@@ -1,0 +1,80 @@
+.pricing-card-container {
+  border: 1px solid var(--stroke);
+  padding: 2vh 2vw;
+  border-radius: 8px;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.service-name {
+  color: var(--grey-25);
+  font-size: 0.8rem;
+}
+
+.service-price {
+  color: var(--button-primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+  /* line-height: 15vh; */
+  padding-right: 0.5rem;
+}
+
+.price-type {
+  color: var(--grey-25);
+  font-size: 0.6rem;
+}
+
+.service-mvp {
+  color: var(--grey-25);
+  font-size: 0.7rem;
+}
+
+.service-include {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  color: var(--button-primary-color);
+  margin-top: 1rem;
+}
+
+.star-icon {
+  margin: 2px;
+}
+
+.service-includes-container {
+  margin-bottom: 2rem;
+}
+
+.pricing-card-container:hover {
+  border: 1px solid transparent;
+  border-image: linear-gradient(
+    to right,
+    var(--orange-gradient-bright),
+    var(--orange-gradient-light)
+  );
+  border-image-slice: 1;
+  border-radius: 8px;
+}
+
+.pricing-card-container:hover .service-name {
+  color: var(--orange-gradient-bright);
+}
+
+.pricing-card-container:hover .star-icon > path {
+  fill: var(--orange-gradient-light);
+  stroke: var(--orange-gradient-bright);
+}
+
+.name-tag {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag {
+  padding: 0.5vh 0.5vw;
+  background-color: var(--orange-gradient-bright);
+  color: var(--white);
+  font-size: 0.5rem;
+  border-radius: 2px;
+}

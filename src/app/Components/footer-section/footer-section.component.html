@@ -1,0 +1,17 @@
+<div class="footer-container">
+  <div class="left-pannel">
+    <h1>{{ appName }}</h1>
+    <p>We design and develop scalable platforms that help companies grow</p>
+    <div class="socials">
+      @for(social of socials; track social){
+      <img [src]="social" alt="social" class="social" />
+      }
+    </div>
+    <p class="copy-write">© 2024 Studio.io | All Rights Reserved.</p>
+  </div>
+  <div class="right-pannel">
+    @for(fl of footerLinks; track fl) {
+    <p>{{ fl }}</p>
+    }
+  </div>
+</div>

@@ -1,0 +1,18 @@
+h4{
+    font-size: 1rem;
+    color: var(--button-primary-color);
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+p{
+    font-size: 0.8rem;
+    color: var(--grey-25);
+    width: 80%;
+}
+
+img{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #F4F4F4;
+}

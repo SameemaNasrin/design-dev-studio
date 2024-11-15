@@ -1,0 +1,12 @@
+<div class="nav-container" [class.hidden]="isHidden">
+  <h2>{{ appName }}</h2>
+
+  <div class="navLinks">
+    @for(NavLink of NavLinks; track NavLink){
+        <button mat-button>{{ NavLink }}</button>
+    }
+    <button mat-flat-button id="kickstart-project-btn">
+        KICKSTART YOUR PROJECT
+    </button>
+  </div>
+</div>

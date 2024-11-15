@@ -1,0 +1,185 @@
+<div class="home-container">
+  <div class="design-dev-studio-tag">
+    <img src="assets/Icon_Star.svg" alt="star" id="star" />
+    Design-Dev Studio
+  </div>
+
+  <div class="hero-section">
+    <p class="heading">
+      Launch Your Product in Just <span class="highlight-text">15 Days</span>
+    </p>
+    <p class="sub-heading">
+      With a budget-friendly and fixed pricing, we'll craft, build, and bring
+      your idea to life within 15 days.
+    </p>
+  </div>
+  <app-button buttonText="Discuss your Project" theme="light" />
+</div>
+
+<div class="project-section">
+  <div class="marquee-content">
+    @for(project of projects; track project){
+    <ng-container>
+      <app-project-templates
+        [projectTemplate]="project"
+      ></app-project-templates>
+    </ng-container>
+    } @for(project of projects; track project){
+    <ng-container>
+      <app-project-templates
+        [projectTemplate]="project"
+      ></app-project-templates>
+    </ng-container>
+    }
+  </div>
+</div>
+
+<div class="template-section">
+  <div class="marquee-content-template">
+    @for(template of templates; track template){
+    <ng-container>
+      <app-project-templates
+        [projectTemplate]="template"
+      ></app-project-templates>
+    </ng-container>
+    } @for(template of templates; track template){
+    <ng-container>
+      <app-project-templates
+        [projectTemplate]="template"
+      ></app-project-templates>
+    </ng-container>
+    }
+  </div>
+</div>
+
+<div class="mission-section">
+  <app-page-headers
+    [greenText]="headingTemplates.missionSection.greenText"
+    [headingText]="headingTemplates.missionSection.headingText"
+    [subHeadingText]="headingTemplates.missionSection.subHeadingText"
+  />
+
+  <div class="frames-section">
+    @for(frame of missionFrames; track frame){
+    <div class="mission-frames">
+      <img [src]="frame.bgImage" alt="frame-bg-image" class="frame-image" />
+      <p class="frame-text">
+        {{ frame.frameText }}
+      </p>
+    </div>
+    }
+    <div
+      class="coming-soon-frame"
+      style="background-image: url('assets/Web_Template_Background.svg')"
+    >
+      <p>Quick start and launch with</p>
+      <div class="coming-soon-other-content">
+        <p>Template Forest</p>
+        <p>
+          Launch a website that helps you cut through the noise, build trust
+          with your audience, and drive results for your business.
+        </p>
+        <button mat-flat-button id="kickstart-project-btn">
+          {{ "coming soon" | uppercase }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <app-button buttonText="see plans" theme="light" />
+</div>
+
+<div class="competitive-section">
+  <app-page-headers
+    [greenText]="headingTemplates.competitiveSection.greenText"
+    [headingText]="headingTemplates.competitiveSection.headingText"
+    [subHeadingText]="headingTemplates.competitiveSection.subHeadingText"
+  />
+  <div class="competitive-cards">
+    @for(competitiveCard of competitiveCards; track competitiveCard){
+    <app-competitive-card
+      class="competitive-card"
+      [competitiveCard]="competitiveCard"
+    />
+    }
+  </div>
+
+  <app-button buttonText="Discuss a Project" theme="light" />
+</div>
+
+<div class="service-section">
+  <app-page-headers
+    [greenText]="headingTemplates.serviceSection.greenText"
+    [headingText]="headingTemplates.serviceSection.headingText"
+    [subHeadingText]="headingTemplates.serviceSection.subHeadingText"
+    theme="dark"
+  />
+
+  <div class="button-sections">
+    @for(serviceBtn of serviceBtns; track serviceBtn){
+    <button
+      class="service-btn"
+      [style]="{
+        borderImage:
+          'linear-gradient(to right, ' +
+          serviceBtn.colorBright +
+          ', ' +
+          serviceBtn.colorLight +
+          ') 1'
+      }"
+    >
+      {{ serviceBtn.btn }}
+    </button>
+    }
+  </div>
+  <app-button buttonText="Discuss a Project" theme="dark" />
+</div>
+
+<div class="pricing-section">
+  <app-page-headers
+    [greenText]="headingTemplates.pricingSection.greenText"
+    [headingText]="headingTemplates.pricingSection.headingText"
+    [subHeadingText]="headingTemplates.pricingSection.subHeadingText"
+  />
+
+  <div class="pricing-card-container">
+    @for(pricingCard of pricingCards; track pricingCard){
+
+    <app-pricing-card [pricingCardContext]="pricingCard" />
+    }
+  </div>
+</div>
+
+<div class="faq-section">
+  <app-page-headers
+    [greenText]="headingTemplates.faqSection.greenText"
+    [headingText]="headingTemplates.faqSection.headingText"
+    [subHeadingText]="headingTemplates.faqSection.subHeadingText"
+  />
+
+  <div class="faq-panel-container">
+    <app-faq />
+  </div>
+</div>
+
+<div class="dark-section">
+  <app-page-headers
+    [greenText]="headingTemplates.darkSection.greenText"
+    [headingText]="headingTemplates.darkSection.headingText"
+    [subHeadingText]="headingTemplates.darkSection.subHeadingText"
+    theme="dark"
+  />
+  <div class="dark-section-buttons">
+    <app-button
+      buttonText="Discuss your Project"
+      theme="dark"
+      class="dark-section-button"
+    />
+    <app-button
+      buttonText="Explore Templates"
+      theme="outline-dark"
+      class="dark-section-button"
+    />
+  </div>
+</div>
+
+<app-footer-section />

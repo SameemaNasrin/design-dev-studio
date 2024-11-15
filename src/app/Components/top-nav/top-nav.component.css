@@ -1,0 +1,30 @@
+.nav-container.hidden {
+  transform: translate(0%, -120%);
+}
+
+.nav-container {
+  transition: transform 0.5s ease;
+
+  padding: 2vh 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0vh;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 50%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+h2 {
+  color: var(--button-primary-color);
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) { 
+    .nav-container{
+        background-color: red;
+    }
+}
