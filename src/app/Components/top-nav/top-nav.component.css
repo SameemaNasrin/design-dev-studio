@@ -23,8 +23,20 @@ h2 {
   font-size: 2rem;
 }
 
-@media (max-width: 768px) { 
-    .nav-container{
+@media (max-width: 900px) {
+  /* .nav-container{
         background-color: red;
-    }
+    } */
+  .nav-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nav-links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
 }

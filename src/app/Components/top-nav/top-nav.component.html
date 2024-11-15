@@ -1,7 +1,7 @@
 <div class="nav-container" [class.hidden]="isHidden">
   <h2>{{ appName }}</h2>
 
-  <div class="navLinks">
+  <div class="nav-links">
     @for(NavLink of NavLinks; track NavLink){
         <button mat-button>{{ NavLink }}</button>
     }

@@ -14,4 +14,13 @@
     <p>{{ fl }}</p>
     }
   </div>
+
+  <div class="mobile-social-copywrite">
+    <div class="mobile-socials">
+      @for(social of socials; track social){
+      <img [src]="social" alt="social" class="social" />
+      }
+    </div>
+    <p class="mobile-copy-write">© 2024 Studio.io | All Rights Reserved.</p>
+  </div>
 </div>

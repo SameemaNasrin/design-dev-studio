@@ -39,6 +39,7 @@
     </p>
     }
   </div>
-
-  <app-button [buttonText]="pricingCardContext.btnText" theme="light" />
+  <button mat-flat-button id="kickstart-project-btn" class="pricing-btn">
+    {{ pricingCardContext.btnText | uppercase }}
+  </button>
 </div>

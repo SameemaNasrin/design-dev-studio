@@ -115,10 +115,11 @@ app-project-templates {
   margin: 2rem;
   border: 1px solid var(--border-white);
   border-radius: 8px;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
+  background-size: cover;
+  background-position: left;
+  background-image: url("../../../assets/Web_Template_Background.svg");
+
   padding: 2rem;
 }
 
@@ -149,14 +150,16 @@ app-project-templates {
 .competitive-section,
 .service-section,
 .pricing-section,
-.dark-section {
+.dark-section,
+.dark-section-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.service-section, .dark-section {
+.service-section,
+.dark-section {
   margin: 5rem 0;
   padding-bottom: 5rem;
   background-image: url("../../../assets/Web_Background_Light_ForServices.svg"),
@@ -176,7 +179,7 @@ app-project-templates {
 
 .button-sections {
   width: 40vw;
-  
+
   text-align: center;
   margin: auto;
   margin-bottom: 5rem;
@@ -217,4 +220,68 @@ app-project-templates {
 
 .dark-section-button {
   margin: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .heading {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .sub-heading {
+    padding: 0 10vw;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .coming-soon-frame {
+    height: 80vh;
+    width: 80vw;
+    margin: 0;
+    grid-column: 1 / span 1;
+    background-image: url("../../../assets/Mobile_Template_Background.svg");
+  }
+
+  .coming-soon-frame > p:first-child {
+    margin-bottom: 2rem;
+  }
+
+  .frames-section {
+    width: 80vw;
+    grid-template-columns: 1fr;
+  }
+
+  .coming-soon-other-content p:nth-child(2) {
+    width: 60vw;
+  }
+
+  .frame-image {
+    max-width: 80vw;
+  }
+
+  .mission-frames {
+    margin: 0rem;
+    margin-top: 2rem;
+    width: fit-content;
+  }
+
+  .competitive-cards {
+    grid-template-columns: 1fr;
+    border: 1px solid var(--border-white);
+    border-radius: 4px;
+  }
+
+  .pricing-card-container {
+    flex-direction: column;
+  }
+
+  .service-btn {
+    padding: 0.5vh 0.5vw;
+  }
+
+  
+.button-sections {
+  width: 80vw;
+}
+
 }

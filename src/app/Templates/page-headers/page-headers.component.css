@@ -13,15 +13,13 @@
 
 .light-themed-h1 {
   color: var(--button-primary-color);
-  width: 65vw;
-  padding: 3vw;
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 500;
 }
 
 .dark-themed-h1 {
   color: var(--white);
+}
+
+h1 {
   width: 65vw;
   padding: 3vw;
   text-align: center;
@@ -33,4 +31,18 @@
   color: var(--grey-25);
   width: 40vw;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    width: 80vw;
+    padding: 3vw;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .page-headers-section p:last-child {
+    width: 80vw;
+  }
 }

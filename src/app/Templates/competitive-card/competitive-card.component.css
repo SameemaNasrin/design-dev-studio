@@ -1,18 +1,25 @@
-h4{
-    font-size: 1rem;
-    color: var(--button-primary-color);
-    font-weight: 400;
-    margin: 0.5rem 0;
+h4 {
+  font-size: 1rem;
+  color: var(--button-primary-color);
+  font-weight: 400;
+  margin: 0.5rem 0;
 }
 
-p{
-    font-size: 0.8rem;
-    color: var(--grey-25);
-    width: 80%;
+p {
+  font-size: 0.8rem;
+  color: var(--grey-25);
+  width: 100%;
 }
 
-img{
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #F4F4F4;
+img {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+}
+
+@media (max-width: 900px) {
+  .competitiveCard {
+    padding-bottom: 2vh;
+    border-bottom: 1px solid var(--border-white);
+  }
 }
